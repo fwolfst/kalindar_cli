@@ -1,5 +1,6 @@
 require "kalindar_cli/version"
 
-module KalindarCli
-  # Your code goes here...
+require 'kalindar'
+
+module KalindarCLI
 end
