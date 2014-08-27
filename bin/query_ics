@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'kalindar'
+require 'terminal-table'
+
+
+if ARGV.length == 0
+  STDERR.puts "query_ics <ics-file> [number_of_days]"
+  exit 1
+end
+
+number_days = (ARGV[1] && ARGV[1].to_i) || 30
+
+calendar = EventCalendar.new ARGV[0]
+
+next_evs = calendar.events_in Date.today, (Date.today + number_days)
+
+puts Terminal::Table.new :headings => ['start', 'end', 'summary', 'location'], :rows => next_evs.values.flatten.map{|e| [e.dtstart, e.dtend, e.summary, e.location]}
+
+exit 0
