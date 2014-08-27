@@ -1,6 +1,6 @@
 # KalindarCli
 
-TODO: Write a gem description
+Query ICS files.
 
 ## Installation
 
@@ -18,12 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    query_ics <path_to_ics_file> [number_of_days]
 
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/kalindar_cli/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+2. Mail me
+3. Create your feature branch (`git checkout -b my-new-feature`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
